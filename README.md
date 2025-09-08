@@ -5,7 +5,7 @@ App viết bằng Python sử dụng thư viện Tkinter để làm ra giao di�
     Mục Status: Thể hiện các trạng thái hiện tại của mạng 5G
     Mục Actions:
     Mục Apps: Các chức năng chính của app bao gồm: kết nối cuộc gọi SIP call, browser (hoặc video) để pop-up ra trình duyệt, 
-# Các chức năng cần hoàn thiện tiếp theo
+# Các chức năng đã hoàn thiện:
 # PING
 có 1 textbox để nhập địa chỉ, 1 textbox nhập số gói (mặc định bằng 0, tức  ping vô hạn)
 1 nút bấm "ping", 1  nút bấm "stop"
@@ -14,3 +14,15 @@ có 1 textbox để nhập địa chỉ, 1 textbox nhập số gói (mặc đị
 có 1 textbox để nhập địa chỉ, 1 textbox nhập số hop tối đa (mặc định bằng 30, tức tối đa 30 hops)
 1 nút bấm "traceroute", 1  nút bấm "stop"
 1 cái textbox chứa console output
+# Các chức năng cần hoàn thiện:
+- Add route
+- Sipcall
+- Video
+# Tính năng thêm:
+- App chạy các background tasks: Sử dụng Asyncico
+- Hiển thị log của tất cả hành động tương tác trong app ( hiển thị cả nguồn của hành động )
+- Console log có màu
+- Xuất ra file text plain
+# Quy trình: 
+Thực thi lệnh chạy srsue, capture log , srsue sẽ kết nối máy đến mạng 5g.
+Chứng minh quy trình chạy qua 5g có các cách: bắt log của srsue, bắt wireshark, hoặc traceroute
